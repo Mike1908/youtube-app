@@ -1,0 +1,77 @@
+.tuile-Video{
+    margin: 10px;
+    width: 245px;
+    height: 281px;
+}
+.video{
+    background-color:black;
+    width: 245px;
+    height: 140px;
+}
+.video img{
+    width: 245px;
+    height: 140px;
+    cursor: pointer;
+}
+.info-v{
+    display: flex;
+    width: 245px;
+    height: 140px;
+}
+
+.image-profil img{
+    justify-content: flex-start;
+    margin-right:12px;
+    margin-top: 12px;
+    margin-left: 1px;
+    height: 36px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.info-text{
+    padding-right: 24px;
+    display:flex;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.titre-v{
+    text-decoration:none;
+    color: white;
+    margin-bottom: 2px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    max-height: 3rem;
+    overflow:hidden;
+    margin-top: 10px;
+}
+.autre{
+    display: flex;
+    flex-direction: column;
+    color: silver;
+    margin-top: 10px;
+}
+.nom-chaine:hover{
+    color:white;
+}
+.nom-chaine{
+    font-size: 0.7rem;
+}
+.nbr-vue{
+    font-size: 0.6rem;
+}
+.date{
+    font-size: 0.5rem;
+    margin-left: 2px;
+}
+.date b{
+    font-size: 0.6rem;
+}
+.bas-info{
+    display: flex;
+    align-items: center;
+}

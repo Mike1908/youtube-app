@@ -1,0 +1,104 @@
+.navbarr{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/**************************************/
+#logo{
+   width: 35px;
+   height: 35px;
+   align-items: center;
+}
+.Logo-menu{
+    display: flex;
+    align-items: center;
+}
+.Logo-menu div{
+    margin-right: 10px;
+    margin-left: 15px;
+}
+/**************************************/
+input[type=search]{
+    border: none;
+    color:silver;
+    background-color: black;
+    text-align: start;
+}
+input[type=search]:focus{
+    border:none;
+    color:silver;
+    background-color: black;
+    text-align: start;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+#site-search{
+    height: 30px;
+    width: 650px;
+}
+@media only screen and (max-width: 1000px) {
+    #site-search{
+        height: 30px;
+        width: 400px;
+    }
+  }
+@media only screen and (max-width: 700px) {
+    #site-search{
+        height: 30px;
+        width: 50%;
+        transition: width 0.4s ease-in-out;
+    }
+    #site-search:focus{
+        width: 250px;
+    }
+    button{
+        
+    }
+  }
+
+.button-search{
+    border: none;
+    margin-left: -3px;
+    width:60px;
+    height: 30.5px;
+    background-color:rgb(78, 78, 78);
+    
+
+}
+
+/**************************************/
+.b-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.b-nav div{
+    margin-right: 20px;
+}
+/**************************************/
+.icon{
+    
+}
+/**************************************/
+.bulle{
+    background-color:rgb(226, 43, 211);
+    color:white;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+
+.bulle span{
+    vertical-align: middle;
+}
