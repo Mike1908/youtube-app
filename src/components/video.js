@@ -14,7 +14,7 @@ class video extends Component {
         return (
             <div className="tuile-Video">
                     <Link to={{
-                                pathname: `/Player/${this.props.video.url}`,
+                                pathname: `/youtube-app/Player/${this.props.video.url}`,
                                 state: [this.props.video,this.props.list,this.props.query] // your data array of objects
                             }}>
                                 <div className="video">
@@ -29,7 +29,7 @@ class video extends Component {
                     <div className="info-text">
                         
                         <Link to={{
-                                pathname: `/Player/${this.props.video.url}`,
+                                pathname: `/youtube-app/Player/${this.props.video.url}`,
                                 state: [this.props.video,this.props.list,this.props.query] // your data array of objects
                             }} style={{ textDecoration: 'none' }}>
                                 <div className="titre-v">

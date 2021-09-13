@@ -10,8 +10,8 @@ const App = () =>{
   return (
    <BrowserRouter>
       <Switch>
-          <Route exact path="/" component={Accueil} />
-          <Route path='/Player/:titre' component={Player} />
+          <Route exact path="/youtube-app/" component={Accueil} />
+          <Route path='/youtube-app/Player/:titre' component={Player} />
           <Route component={Error} />
       </Switch>
    </BrowserRouter>

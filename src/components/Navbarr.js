@@ -51,7 +51,7 @@ const Navbarr = (props) => {
             <div className="Logo-menu">
                 <div onClick={NavbarrVertical}><FiAlignJustify size={30} color='silver'/></div>
                 <div>
-                    <NavLink exact to="/">
+                    <NavLink exact to="/youtube-app/">
                         <img id="logo" alt="Logo" src={logo} />
                     </NavLink>
                 </div>
