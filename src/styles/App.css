@@ -4,17 +4,24 @@
 .nav-Union{
  
 }
-
+.mainNull{
+  display: flex;
+  padding:50px;
+  padding-top: 65px;
+  flex-flow:wrap-reverse;
+  justify-content:center;
+  height: 100%;
+}
 .main{
   display: flex;
   padding:50px;
   padding-top: 65px;
-  flex-flow:wrap;
-  justify-content: center;
-  width: 100%;
+  flex-flow:wrap-reverse;
+  justify-content:flex-end;
   height: 100%;
   
 }
+
 .black{
   background-color: rgba(0, 0, 0, 0.904);
 }
@@ -30,10 +37,12 @@
   font-size: 5rem;
   font-family: monospace;
 }
+
 .astro{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right:40%;
 }
 
 .astro div img{

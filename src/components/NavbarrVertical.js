@@ -33,10 +33,23 @@ class NavbarrVertical extends Component {
                 <div className={this.classeAf()}>
                     <div className="clicBarre" onClick={this.handelclic}><FiAlignJustify size={30} color='silver'/></div>
                     <div className="NavbarrVertical">
-                        <div className="menu"><AiFillHome size={30} color='silver' /></div>
-                        <div className="menu"><IoMdCompass size={30} color='silver'/></div>
-                        <div className="menu"><BsCollectionPlay size={30} color='silver'/></div>
-                        <div className="menu"><BsFiles size={30} color='silver'/></div>
+                        <div className="menu">
+                            <div><AiFillHome size={30} color='white' /></div>
+                            <div>Accueil</div>
+                        </div>
+                        <div className="menu">
+                            <div><IoMdCompass size={30} color='white'/></div>
+                            <div>Explorer</div>
+                        </div>
+                        <div className="menu">
+                            <div><BsCollectionPlay size={30} color='white'/></div>
+                            <div>Abonnements</div>
+                        </div>
+                        <div className="menu">
+                            <div><BsFiles size={30} color='white'/></div>
+                            <div>Bibliotheque</div>
+                            
+                        </div>
                     </div>
                 </div>
                 

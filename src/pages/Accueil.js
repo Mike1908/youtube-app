@@ -8,11 +8,16 @@ import '../styles/App.css';
 import '../styles/video.css';
 import astro from '../image/astro.PNG'
 
+/**
+ * 
+ * @returns la page principal HTML
+ */
 const Accueil = () => {
 
     /**state en hook */
     const [query, setQuery] = React.useState('[nextpageRef]');
     const [list, setList] = React.useState(null);
+
 
     /**
      * @param {une liste de video} list 
@@ -24,7 +29,7 @@ const Accueil = () => {
             return(
                 <div className="astro">
                     <div>
-                        <img src={astro} alt="" />
+                        <img src={astro} alt="recherche api YouTube" />
                     </div>
                     <div className="astro-text">recherche api YouTube</div>
                 </div>
@@ -43,13 +48,14 @@ const Accueil = () => {
             })
         }
     }
-  
+
     return (
         <div className="App">
             <div className="nav-Union">
                 <Navbarr query={query} setQuery={setQuery} setList={setList}></Navbarr>
                 <NavbarrVertical></NavbarrVertical>
             </div>
+            
             <div className="main">
                 {afficher(list)}
             </div>
