@@ -10,27 +10,27 @@ const Player = (props) => {
     const { state } = props.location
     const [query, setQuery] = React.useState(state[2]);
     const [list, setList] = React.useState(state[1]);
-    const [clipuePl,setCliquePl]= React.useState(false);
+    const [clickPl,setClickPl]= React.useState(false);
 
-    const linkRetour =() =>{
+    const linkReturn =() =>{
         let str = props.location.pathname;
         return str.substr(8)+props.location.search;
     }
 
-    const affVertcalBar=()=>{
-        if (clipuePl) {
-            return(<NavbarrVertical></NavbarrVertical>);
+    const renderVertcalBar=()=>{
+        if (clickPl) {
+            return(<NavbarrVertical clickPl={clickPl} setClickPl={setClickPl}></NavbarrVertical>);
         }else{
             return;
         }
     }
 
-    let str = linkRetour();
+    let str = linkReturn();
     
     return (
         <div>
-           <Navbarr query={query} setQuery={setQuery} setList={setList} clipuePl={[clipuePl,setCliquePl]}></Navbarr>
-           {affVertcalBar()}
+           <Navbarr query={query} setQuery={setQuery} setList={setList} clickPl={[clickPl,setClickPl]}></Navbarr>
+           {renderVertcalBar()}
             <VideoPl urlValue={str} info ={state[0]} list={list} query={query}></VideoPl>
         </div>
     )

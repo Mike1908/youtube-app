@@ -1,20 +1,16 @@
 import React from 'react';
 import Navbarr from '../components/Navbarr';
 import NavbarrVertical from '../components/NavbarrVertical';
-import Video from '../components/video';
-import '../styles/Navbarr.css';
-import '../styles/NavbarrVertical.css';
-import '../styles/App.css';
-import '../styles/video.css';
+import Video from '../components/Video';
+import '../styles/superHome.css';
 import astro from '../image/astro.PNG'
 
 /**
  * 
  * @returns la page principal HTML
  */
-const Accueil = () => {
+const Home = () => {
 
-    /**state en hook */
     const [query, setQuery] = React.useState('[nextpageRef]');
     const [list, setList] = React.useState(null);
 
@@ -23,7 +19,7 @@ const Accueil = () => {
      * @param {une liste de video} list 
      * @returns l affichage HTML
      */
-    const afficher = (list) =>{
+    const renderList = (list) =>{
   
         if (list === null ) { 
             return(
@@ -37,7 +33,6 @@ const Accueil = () => {
         
         } else {
             var savList = list;
-            //console.log(savList);
 
             return list.map((list) => {
                 return (
@@ -57,10 +52,10 @@ const Accueil = () => {
             </div>
             
             <div className="main">
-                {afficher(list)}
+                {renderList(list)}
             </div>
         </div>
     );
 };
 
-export default Accueil;
+export default Home;
