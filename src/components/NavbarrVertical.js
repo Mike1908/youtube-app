@@ -21,7 +21,7 @@ const NavbarrVertical = () => {
         } else {
             //this.props.setCliquePl(false);
             //console.log(this.props.clipuePl);
-            return "NavbarrVertical-U-Clic";
+            return "NavbarrVertical-U-Click";
         }
     }
 
@@ -30,7 +30,7 @@ const NavbarrVertical = () => {
 
         return (
             <div className={classRenderName()}>
-                <div className="clicBarre" onClick={handelclick}><FiAlignJustify size={30} color='silver'/></div>
+                <div className="clickBarre" onClick={handelclick}><FiAlignJustify size={30} color='silver'/></div>
                 <div className="NavbarrVertical">
                     <div className="menu">
                         <div><AiFillHome size={30} color='white' /></div>
@@ -57,7 +57,7 @@ const NavbarrVertical = () => {
         return (
             <div className={classRenderName()}>
 
-                <div className="clicBarre" onClick={handelclick}><FiAlignJustify size={30} color='silver'/></div>
+                <div className="clickBarre" onClick={handelclick}><FiAlignJustify size={30} color='silver'/></div>
                 <div className="NavbarrVertical">
                     <div className="menu-2">
                         <div><AiFillHome size={30} color='silver' /></div>

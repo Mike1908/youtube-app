@@ -10,7 +10,7 @@ const CardVideo = (props) => {
     const {query} = props;
 
     return (
-        <div className="TuileVideo">
+        <div className="cardVideo">
 
             <Link to={{
                             pathname: `/youtube-app/Player/${video.url}`,
@@ -20,6 +20,7 @@ const CardVideo = (props) => {
                                 <img src={video.bestThumbnail.url} alt="miniature" />
                             </div>
             </Link>
+
             <div>
                 <Link to={{
                             pathname: `/youtube-app/Player/${video.url}`,
@@ -30,8 +31,11 @@ const CardVideo = (props) => {
                             </dir>   
                 </Link>
 
-                <div className="nom-chaine-vertcal">{video.author.name}</div>
-                <div className="nbr-vue-vertical">
+                <div className="name-chaine-vertcal">
+                    {video.author.name}
+                </div>
+                
+                <div className="nbr-view-vertical">
                     {viewNumbers(video.views)} vue
                     <b>⸱</b> il y a {video.uploadedAt}
                 </div>

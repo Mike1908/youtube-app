@@ -3,13 +3,13 @@
     
 }
 
-.aff-G{
+.page-left{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.aff-D{
+.page-right{
     display: flex; 
     margin-top: 86px;
     margin-right: 5%;
@@ -30,16 +30,16 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.titre{
+.title{
     color: white;
 }
-.vueETdate{
+.viewDate{
     color: silver;
     display: flex;
     font-size: 0.8em;
     border-bottom: 1px solid silver;
 }
-.vueETdate div{
+.viewDate div{
     margin: 5px;
     margin-bottom: 10px;
 }
@@ -58,7 +58,7 @@
          align-self:center;
  
     }
-    .aff-D{
+    .page-right{
          margin-left: 7%;
     }
     .playerA{

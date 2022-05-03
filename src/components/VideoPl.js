@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/videopl.css';
-import '../styles/TuileVideo.css'
+import '../styles/CardVideo.css';
 import ReactPlayer from "react-player"
 import CardVideo from './CardVideo';
 
@@ -29,7 +29,7 @@ const VideoPl = (props) =>{
     return (
         <div className="videoPl">
 
-            <div className="aff-G">
+            <div className="page-left">
 
                 <div className="playerA">
                     <ReactPlayer 
@@ -40,16 +40,16 @@ const VideoPl = (props) =>{
                 </div>
 
                 <div className="infoV">
-                    <div className="titre">{info.title}</div>
-                    <div className="vueETdate">
-                        <div className="vueP">{info.views} vues</div>
+                    <div className="title">{info.title}</div>
+                    <div className="viewDate">
+                        <div className="viewP">{info.views} vues</div>
                         <div className="dateP"><b>⸱</b> {info.uploadedAt}</div>
                     </div>
                     <div className="infoDescription">
                         <div className="image-profil">
                             <img src={info.author.avatars[0].url} alt={info.author.name[0]} />
                         </div>
-                        <div className="nom-chaineP">
+                        <div className="name-chainP">
                             {info.author.name}
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const VideoPl = (props) =>{
 
             </div>
 
-            <div className="aff-D">
+            <div className="page-right">
                 {renderVertical()}
             </div>
 

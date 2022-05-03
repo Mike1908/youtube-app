@@ -45,9 +45,9 @@ const Navbarr = (props) => {
 
     const bubbleImg = (lien,profil) =>{
         if (lien === "") {
-            return (<div className="bulle"><span>{profil[0]}</span></div>);
+            return (<div className="bubble"><span>{profil[0]}</span></div>);
         } else {
-            return (<img className="bulle" alt={profil[0]} src={link}/>);
+            return (<img className="bubble" alt={profil[0]} src={link}/>);
         }
     }
 

@@ -1,4 +1,4 @@
-.TuileVideo{
+.cardVideo{
    display: flex;
 }
 .videoL{
@@ -20,12 +20,12 @@
     padding-left: 0%;
     margin-left: 10px;
 }
-.nbr-vue-vertical{
+.nbr-view-vertical{
     color: white;
     font-size: 0.6rem;
     margin-left: 10px;
 }
-.nom-chaine-vertcal{
+.name-chaine-vertcal{
     font-size: 0.7rem;
     color:white;
     margin-bottom: 4px;

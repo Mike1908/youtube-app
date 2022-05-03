@@ -95,7 +95,7 @@ input[type=search]:focus{
     
 }
 /**************************************/
-.bulle{
+.bubble{
     background-color:rgb(226, 43, 211);
     color:white;
     height: 32px;
@@ -105,6 +105,6 @@ input[type=search]:focus{
     text-align: center;
   }
 
-.bulle span{
+.bubble span{
     vertical-align: middle;
 }

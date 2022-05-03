@@ -14,7 +14,7 @@ const Video = (props) =>{
     const {query} = props;
 
     return (
-        <div className="tuile-Video">
+        <div className="Card-Video">
                 <Link to={{
                             pathname: `/youtube-app/Player/${video.url}`,
                             state: [video,list,query] 
@@ -34,15 +34,15 @@ const Video = (props) =>{
                             pathname: `/youtube-app/Player/${video.url}`,
                             state: [video,list,query]
                         }} style={{ textDecoration: 'none' }}>
-                            <div className="titre-v">
+                            <div className="title-v">
                                 {video.title}
                             </div>
                     </Link>
 
-                    <div className="autre">
-                        <div className="nom-chaine">{video.author.name}</div>
-                        <div className="bas-info">
-                            <div className="nbr-vue">{viewNumbers(video.views)} vue</div>
+                    <div className="other">
+                        <div className="name-chain">{video.author.name}</div>
+                        <div className="bottom-info">
+                            <div className="nbr-view">{viewNumbers(video.views)} vue</div>
                             <div className="date"><b>⸱</b> il y a {video.uploadedAt}</div>
                         </div> 
                     </div>
