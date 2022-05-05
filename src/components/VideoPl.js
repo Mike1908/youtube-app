@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/videopl.css';
+import '../styles/videoPl.css';
 import '../styles/CardVideo.css';
 import ReactPlayer from "react-player"
 import CardVideo from './CardVideo';
