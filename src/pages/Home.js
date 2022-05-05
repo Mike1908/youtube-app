@@ -13,6 +13,7 @@ const Home = () => {
 
     const [query, setQuery] = React.useState('[nextpageRef]');
     const [list, setList] = React.useState(null);
+    const [click, setClick] = React.useState(false);
 
 
     /**
@@ -47,8 +48,8 @@ const Home = () => {
     return (
         <div className="App">
             <div className="nav-Union">
-                <Navbarr query={query} setQuery={setQuery} setList={setList}></Navbarr>
-                <NavbarrVertical></NavbarrVertical>
+                <Navbarr query={query} setQuery={setQuery} setList={setList} click={click} setClick={setClick}></Navbarr>
+                <NavbarrVertical click={click} setClick={setClick}></NavbarrVertical>
             </div>
             
             <div className="main">

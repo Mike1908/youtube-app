@@ -13,7 +13,7 @@ const Navbarr = (props) => {
 
     const {query , setQuery} = props;
     const {setList} = props;
-    const {clickPl} = props
+    const {click,setClick} = props
     const {value} = props;
 
     const profil = "Mike"; //static 
@@ -35,12 +35,8 @@ const Navbarr = (props) => {
         setQuery(Event.target.value)
     }
 
-    const NavbarrVertical= () =>{
-        if(clickPl==null){
-            console.log(null);
-        }else{
-            clickPl[1](!clickPl[0]);
-        }
+    const handelclick = () =>{
+        setClick(!(click))  
     }
 
     const bubbleImg = (lien,profil) =>{
@@ -55,7 +51,7 @@ const Navbarr = (props) => {
         <div className="navbarr">
 
             <div className="Logo-menu">
-                <div onClick={NavbarrVertical}><FiAlignJustify size={30} color='silver'/></div>
+                <div onClick={handelclick}><FiAlignJustify size={30} color='silver'/></div>
                 <div>
                     <NavLink exact to="/youtube-app/">
                         <img id="logo" alt="Logo" src={logo} /> 

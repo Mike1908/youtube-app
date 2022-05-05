@@ -4,9 +4,10 @@ import { IoMdCompass } from "react-icons/io";
 import React from 'react';
 import { FiAlignJustify } from "react-icons/fi";
 
-const NavbarrVertical = () => { 
+const NavbarrVertical = (props) => { 
  
-    const [click, setClick] = React.useState(false);   
+    //const [click, setClick] = React.useState(false);
+    const {click, setClick} = props
     
     const handelclick = () =>{
         setClick(!(click))
@@ -15,12 +16,8 @@ const NavbarrVertical = () => {
 
     const classRenderName = () =>{
         if (!click) {
-            //console.log(this.props.clipuePl);
-            //this.props.setCliquePl(false);
             return "NavbarrVertical-U";
         } else {
-            //this.props.setCliquePl(false);
-            //console.log(this.props.clipuePl);
             return "NavbarrVertical-U-Click";
         }
     }
