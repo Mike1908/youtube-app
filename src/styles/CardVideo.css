@@ -1,5 +1,6 @@
 .cardVideo{
    display: flex;
+   width:100%;
 }
 .videoL{
     background-color: black;
@@ -30,4 +31,29 @@
     color:white;
     margin-bottom: 4px;
     margin-left: 10px;
+}
+@media only screen and (max-width: 700px) {
+    .infoL{
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+        max-height: 3rem;
+    }
+  
+    .videoL{
+        background-color: black;
+        width: 120px;
+        height: 90px;
+    }
+    .videoL img{
+        width: 120px;
+        height: 90px;
+    }
+
+    .nbr-view-vertical{
+        font-size: 0.5rem;
+    }
+    .name-chaine-vertcal{
+        margin-bottom:0;
+        font-size: 0.6rem;
+    }
 }
