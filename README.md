@@ -17,7 +17,7 @@ Application clone web de YouTube qui permet d’interroger une Api Afin de reche
 1. Cloner le dépôt
     ```git clone https://github.com/your_username_/Project-Name.git```
 2. Installer les packages NPM
-    ```installation npm```
+    ```npm install```
 3. Lancer le Project 
     ```npm start;```
 
