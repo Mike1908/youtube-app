@@ -19,5 +19,5 @@ Application clone web de YouTube qui permet d’interroger une Api Afin de reche
 2. Installer les packages NPM
     ```npm install```
 3. Lancer le Project 
-    ```npm start;```
+    ```npm start```
 
