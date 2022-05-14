@@ -16,6 +16,8 @@ const Navbarr = (props) => {
     const {click,setClick} = props
     const {value} = props;
 
+    const [visibility, setVisibility] = React.useState("visibiliteOff");
+
     const profil = "Mike"; //static 
     const link = "";
 
@@ -25,6 +27,7 @@ const Navbarr = (props) => {
     const search = (e) => {
         e.preventDefault();
         searchYouTube(query).then(setList);
+        handeVisibility();
         //console.log(searchYouTube(query).then(setList));
     };
 
@@ -47,6 +50,14 @@ const Navbarr = (props) => {
         }
     }
 
+    const handeVisibility = () =>{
+        if (visibility === "visibiliteON") {
+            setVisibility("visibiliteOff");
+        } else {
+            setVisibility("visibiliteON");
+        }
+    }
+
     return (
         <div className="navbarr">
 
@@ -60,7 +71,7 @@ const Navbarr = (props) => {
             </div>
 
             <form className="search" onSubmit={search} >
-                <input autoFocus type="search" id="site-search"  placeholder="Rechercher" value={value} onChange={HashChange} ></input>
+                <input autoFocus className={visibility} type="search" id="site-search"  placeholder="Rechercher" value={value} onChange={HashChange} ></input>
                 <button className="button-search"><BsSearch color='white'/></button>
             </form>
             
