@@ -32,6 +32,7 @@ input[type=search]{
     text-align: start;
     outline:none;
 }
+
 input[type=search]:focus{
     border:none;
     color:silver;
@@ -94,10 +95,11 @@ input[type=search]:focus{
     }
 
     .visibiliteON{
-        display:none;
-    }
-    .visibiliteOff{
         display:block;
+    }
+
+    .visibiliteOff{
+        display:none;
     }
 
   }
@@ -110,7 +112,7 @@ input[type=search]:focus{
     align-items: center;
     margin-right: 16px;
 }
-.b-nav div{
+.b-nav .icon{
     margin-right: 20px;
 }
 /**************************************/
@@ -124,11 +126,9 @@ input[type=search]:focus{
     color:white;
     height: 32px;
     width: 32px;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
+    border-radius:50%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-.bubble span{
-    vertical-align: middle;
-}
