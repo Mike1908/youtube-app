@@ -65,9 +65,9 @@ const Navbarr = (props) => {
                 <button className="button-search" ><BsSearch color='white'/></button>
             </form>
             <form className="search_resp" onSubmit={search} >
-                <div class="search-box">
-                    <button class="btn-search"><BsSearch color='silver'/></button>
-                    <input type="text" class="input-search" placeholder="Rechercher" value={value} onChange={HashChange}/>
+                <div className="search-box">
+                    <button className="btn-search"><BsSearch color='silver'/></button>
+                    <input type="text" className="input-search" placeholder="Rechercher" value={value} onChange={HashChange}/>
                 </div>
             </form>
             
