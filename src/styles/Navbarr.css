@@ -95,15 +95,6 @@ input[type=search]:focus{
         background-color: #333;
     }
 
-    .visibiliteON{
-        display:block;
-    }
-
-    .visibiliteOff{
-        display:none;
-    }
-
-
     .search-box{
         display: block;
         width: fit-content;
@@ -165,9 +156,7 @@ input[type=search]:focus{
     margin-right: 20px;
 }
 /**************************************/
-.icon{
-    
-}
+
 /**************************************/
 .bubble{
     position: relative;
